@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="305dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/xrminetitle"
+        android:contentDescription="@string/tod" />
+
+    <TextView
+        android:id="@+id/textpitch"
+        android:layout_width="267dp"
+        android:layout_height="76dp"
+        android:text="@string/increasing_the_utility_and_accessibility_of_the_xrp_ledger"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="350dp"
+        android:layout_height="251dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpitch"
+        app:srcCompat="@mipmap/xrmineimg" />
+
+    <TextView
+        android:id="@+id/textaction"
+        android:layout_width="267dp"
+        android:layout_height="79dp"
+        android:text="@string/click_the_links_below_to_set_our_trustline_and_find_out_more"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageButton
+        android:id="@+id/website"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textaction"
+        app:layout_constraintStart_toStartOf="@+id/textaction"
+        app:layout_constraintTop_toBottomOf="@+id/textaction"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@mipmap/website_foreground"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/website"
+        app:layout_constraintTop_toBottomOf="@+id/textaction"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@mipmap/twitter_foreground"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/xrplservices"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/website"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textaction"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@mipmap/xrplservice_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
